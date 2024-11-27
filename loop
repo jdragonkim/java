@@ -1,0 +1,25 @@
+public class LoopExample {
+    public static void main(String[] args) {
+        // for문
+        System.out.println("for문 출력:");
+        for (int i = 1; i <= 5; i++) {
+            System.out.println("i = " + i);
+        }
+
+        // while문
+        System.out.println("\nwhile문 출력:");
+        int count = 1;
+        while (count <= 5) {
+            System.out.println("count = " + count);
+            count++;
+        }
+
+        // do-while문
+        System.out.println("\ndo-while문 출력:");
+        int number = 1;
+        do {
+            System.out.println("number = " + number);
+            number++;
+        } while (number <= 5);
+    }
+}
