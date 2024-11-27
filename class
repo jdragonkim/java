@@ -1,0 +1,37 @@
+// Person.java
+public class Person {
+    // 필드 (속성)
+    private String name;
+    private int age;
+
+    // 생성자
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    // 메서드 (행동)
+    public void introduce() {
+        System.out.println("안녕하세요! 제 이름은 " + name + "이고, 나이는 " + age + "살입니다.");
+    }
+
+    // Getter
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    // Setter
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setAge(int age) {
+        if (age > 0) { // 유효성 검사
+            this.age = age;
+        }
+    }
+}
